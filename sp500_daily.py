@@ -13,4 +13,4 @@ for idx in tqdm.tqdm(range(0,len(sp_ticks_forYF),20)):
     closes = pd.concat([df, closes], axis=1)
     time.sleep(.5)
     
-df.to_csv("SP500_prices_1yr.csv")
+closes.to_csv("SP500_prices_1yr.csv")
